@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+}
+div.main>*{
+  margin: 1em;
+}
+
+div.main{
+  background-color: black;
+  position:fixed;
+  height:100%;
+  width: 100%;
+}
+
+div.status{
+  color: white;
+  display: flex;
+}
+
+div.status>input{
+  flex:1;
+}
+
+div.status>h2{
+  flex: 2;
+}
+
+div.table{
+  left: 20%;
+  top: 20%;
+  position: absolute;
+  background: rgb(20,117,0);
+  background: linear-gradient(90deg, rgba(20,117,0,1) 0%, rgba(0,124,29,1) 35%, rgba(0,51,2,1) 100%);
+  border-radius: 15em;
+  height: 60%;
+  width: 60%;
+}
+
+div.game{
+  position: absolute;
+  left: 20%;
+  top:5%;
+  height: 90%;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+
+div.game>.players{
+  width: 49%;
+  height: 49%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px black solid;
+}
+
+div.players>img{
+  width:15%;
+  margin-bottom: auto;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+div.players>h3{
+  display: inline-block;
+  width:45%;
+}
+
+div.players>h3.score{
+  text-align:right;
+}
